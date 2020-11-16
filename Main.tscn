@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Background.tscn" type="PackedScene" id=1]
+[ext_resource path="res://HangPanel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Main.gd" type="Script" id=3]
+[ext_resource path="res://word_label.tscn" type="PackedScene" id=4]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]
+
+[node name="HangManHUD" parent="." instance=ExtResource( 2 )]
+
+[node name="Word" parent="." instance=ExtResource( 4 )]
+script = null
+
+[node name="word_guess" parent="Word/word" index="0"]
+margin_left = 349.773
+margin_top = 136.261
+margin_right = 748.773
+margin_bottom = 218.261
+
+[editable path="Word"]

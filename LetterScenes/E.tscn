@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Letters/Letter_Blocks_01_Set_1_E_128x128.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="E" type="Sprite" parent="."]
+texture = ExtResource( 1 )
